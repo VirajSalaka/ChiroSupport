@@ -217,6 +217,7 @@
                                                             <Font size="14.0" />
                                                          </font>
                                                       </Label>
+                                                      <Button layoutX="734.0" layoutY="142.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Save" />
                                                    </children>
                                                 </AnchorPane>
                                           </content>
@@ -237,6 +238,7 @@
                                                             <Font size="14.0" />
                                                          </font>
                                                       </Label>
+                                                      <Button layoutX="715.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Save" />
                                                    </children>
                                                 </AnchorPane>
                                           </content>
@@ -324,12 +326,98 @@
                                                       <Label layoutX="14.0" layoutY="213.0" text="total loss : " />
                                                       <TextField layoutX="76.0" layoutY="209.0" prefHeight="25.0" prefWidth="53.0" />
                                                       <Label layoutX="142.0" layoutY="213.0" text=" % " />
+                                                      <Label layoutX="14.0" layoutY="244.0" text="Comments :" />
+                                                      <TextArea layoutX="14.0" layoutY="261.0" prefHeight="38.0" prefWidth="880.0" />
+                                                      <Separator layoutX="3.0" layoutY="336.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                                      <Button layoutX="727.0" layoutY="311.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Save" />
+                                                      <TableView layoutX="14.0" layoutY="373.0" prefHeight="200.0" prefWidth="881.0">
+                                                        <columns>
+                                                          <TableColumn prefWidth="67.0" text="Date" />
+                                                          <TableColumn prefWidth="75.0" text="Region" />
+                                                            <TableColumn prefWidth="75.0" text="Flexion">
+                                                               <columns>
+                                                                  <TableColumn prefWidth="26.0" text="tot." />
+                                                                  <TableColumn prefWidth="26.0" text="p/f" />
+                                                               </columns>
+                                                            </TableColumn>
+                                                            <TableColumn prefWidth="64.0" text="Extention">
+                                                               <columns>
+                                                                  <TableColumn prefWidth="26.0" text="tot." />
+                                                                  <TableColumn prefWidth="26.0" text="p/f" />
+                                                               </columns>
+                                                            </TableColumn>
+                                                            <TableColumn prefWidth="64.0" text="LLF">
+                                                               <columns>
+                                                                  <TableColumn prefWidth="26.0" text="tot." />
+                                                                  <TableColumn prefWidth="26.0" text="p/f" />
+                                                               </columns>
+                                                            </TableColumn>
+                                                            <TableColumn prefWidth="64.0" text="RLF">
+                                                               <columns>
+                                                                  <TableColumn prefWidth="26.0" text="tot." />
+                                                                  <TableColumn prefWidth="26.0" text="p/f" />
+                                                               </columns>
+                                                            </TableColumn>
+                                                            <TableColumn prefWidth="64.0" text="LR">
+                                                               <columns>
+                                                                  <TableColumn prefWidth="26.0" text="tot." />
+                                                                  <TableColumn prefWidth="26.0" text="p/f" />
+                                                               </columns>
+                                                            </TableColumn>
+                                                            <TableColumn prefWidth="64.0" text="RR">
+                                                               <columns>
+                                                                  <TableColumn prefWidth="26.0" text="tot." />
+                                                                  <TableColumn prefWidth="26.0" text="p/f" />
+                                                               </columns>
+                                                            </TableColumn>
+                                                            <TableColumn prefWidth="70.0" text="total loss%" />
+                                                            <TableColumn prefWidth="356.0" text="comments" />
+                                                        </columns>
+                                                      </TableView>
+                                                      <Label layoutX="14.0" layoutY="339.0" prefHeight="17.0" prefWidth="95.0" text="Previous Results " />
                                                    </children></AnchorPane>
                                              </content>
                                           </Tab>
                                           <Tab text="    Muscle-Power    ">
                                              <content>
-                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="407.0" prefWidth="919.0" />
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="407.0" prefWidth="919.0">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="6.0" text="Muscle-Power" textFill="#2d30b9">
+                                                         <font>
+                                                            <Font size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label layoutX="14.0" layoutY="42.0" text="Region :" />
+                                                      <TextField layoutX="14.0" layoutY="59.0" />
+                                                      <Label layoutX="241.0" layoutY="42.0" text="Muscle :" />
+                                                      <TextField layoutX="241.0" layoutY="59.0" />
+                                                      <Label layoutX="464.0" layoutY="42.0" text="power :" />
+                                                      <ComboBox layoutX="464.0" layoutY="59.0" prefWidth="150.0" />
+                                                      <Label layoutX="14.0" layoutY="99.0" text="Comments :" />
+                                                      <TextField layoutX="14.0" layoutY="116.0" prefHeight="25.0" prefWidth="602.0" />
+                                                      <Separator layoutY="181.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                                      <Label layoutX="14.0" layoutY="184.0" text="Recently added  :" />
+                                                      <Label layoutX="14.0" layoutY="343.0" text="previous records :" />
+                                                      <TableView layoutX="14.0" layoutY="360.0" prefHeight="228.0" prefWidth="874.0">
+                                                         <columns>
+                                                            <TableColumn prefWidth="75.0" text="Date" />
+                                                            <TableColumn prefWidth="75.0" text="Muscle" />
+                                                            <TableColumn prefWidth="75.0" text="Region" />
+                                                            <TableColumn prefWidth="75.0" text="Power" />
+                                                            <TableColumn prefWidth="572.0" text="Comments" />
+                                                         </columns>
+                                                      </TableView>
+                                                      <TableView layoutX="14.0" layoutY="201.0" prefHeight="122.0" prefWidth="874.0">
+                                                         <columns>
+                                                            <TableColumn prefWidth="75.0" text="Muscle" />
+                                                            <TableColumn prefWidth="75.0" text="Region" />
+                                                            <TableColumn prefWidth="75.0" text="Power" />
+                                                            <TableColumn prefWidth="646.0" text="Comments" />
+                                                         </columns>
+                                                      </TableView>
+                                                      <Separator layoutX="-11.0" layoutY="342.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                                      <Button layoutX="506.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Save" />
+                                                   </children></AnchorPane>
                                              </content>
                                           </Tab>
                                           <Tab text="    Diagnostic Studies    ">
